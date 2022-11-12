@@ -1,7 +1,7 @@
 :root{
   --primario: #0d0d0d;
+  --secundario: #376DF6;
   --letra: #fff;
-
   /* https://www.color-hex.com/color-palette/16812 */
 }
 
@@ -31,8 +31,12 @@ body{
   display: flex;
 }
 
+.grid{
+  display: grid;
+}
+
 h1{
-  font-size: 3.5rem;
+  font-size: 5rem;
 }
 
 #app {
@@ -41,7 +45,7 @@ h1{
   padding: 2rem;
 
   color: var(--letra);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   font-weight: normal;
 }
