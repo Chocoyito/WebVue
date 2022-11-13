@@ -4,8 +4,8 @@
 </script>
 
 <template>
-  <Header></Header>
-  <Main></Main>
+  <Header/>
+  <Main/>
 </template>
 
 <style scoped>

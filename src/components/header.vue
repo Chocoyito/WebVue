@@ -1,22 +1,24 @@
+<script setup>
+
+</script>
+
 <template>
     <header class="header">
         <nav class="navbar flex">
-            <a class="logo">
+            <a href="" class="logo">
                 R
             </a>
             <div class="li_items">
                 <ul class="no-padding flex">
-                    <li>Inicio</li>
-                    <li>Sobre mi</li>
-                    <li>Proyectos</li>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Sobre mi</a></li>
+                    <li><a href="">Proyectos</a></li>
                 </ul>
             </div>
-            
             <div class="button">
                 Boton
             </div>
         </nav>
-        
     </header>
 </template>
 
@@ -38,6 +40,7 @@
     padding: 1rem 2rem;
     border-radius: 16px;
     background-color: var(--secundario);
+    color: white;
     font-weight: bold;
 }
 

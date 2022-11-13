@@ -1,7 +1,7 @@
 :root{
-  --primario: #0d0d0d;
+  --primario: #fff;
   --secundario: #376DF6;
-  --letra: #fff;
+  --letra: #111111;
   /* https://www.color-hex.com/color-palette/16812 */
 }
 
@@ -15,7 +15,7 @@ html{
 }
 
 body{
-  background-color: var(--primario);
+  background-color: var(#fff);
   margin: 0;
 }
 
@@ -35,8 +35,17 @@ body{
   display: grid;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 h1{
   font-size: 5rem;
+}
+
+h2{
+  font-size: 3rem;
 }
 
 #app {
