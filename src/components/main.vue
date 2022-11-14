@@ -11,9 +11,18 @@
                 <h1 class="no-margin">Me llamo <span class="span_name">{{ name }}</span></h1>
                 <h2 class="no-margin">Soy un {{carreer}}</h2>
                 <p>Maiorum disputationi consequat luptatum potenti. Brute urna magna semper harum solet mei habitasse constituto nisi. Nonumes ancillae imperdiet lacus referrentur salutatus condimentum patrioque aenean pertinacia. Partiendo taciti efficitur reprimique saperet volutpat commodo prompta erroribus.</p>
+
+                <div class="div_btn">
+                    <button class="btn">Mas sobre mi</button>
+                </div>
             </div>
             <!-- Aqui otro div para el boton -->
-            <img src="../assets/icons/profile_picture.jpg" alt="">
+            <div class="box">
+                <div class="circle">
+                    <img class="me" src="../assets/icons/yo2.png" alt="">
+                </div>
+                <img class="me" src="../assets/icons/yo2.png" alt="">
+            </div>
 
         </div>
     </main>
@@ -33,11 +42,9 @@
         font-size: 1.5rem;
     }
 
-    img{
+    .me{
         height: auto;
-        width: 70%;
-        border-radius: 50px;
-        filter: drop-shadow(0 0 1.50rem cornflowerblue);
+        width: 100%;
     }
 
     .span_name{
@@ -45,9 +52,49 @@
     }
     
     .main_container{
-        padding: 10rem 10rem;
+        padding: 0 0;
         width: auto;
         /* #090909 #111111 */
+    }
+
+    .box{
+        position: relative;
+        text-align: center;
+        width: 300px;
+        height: 450px;
+        background: #fff;
+        margin: 20px 40px;
+    }
+    .box::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 300px;
+        height: 300px;
+        background: transparent;
+        border-radius: 50%;
+        z-index: 1;
+        box-shadow: 0 100px 0 40px #fff;
+        overflow: hidden;
+    }
+    .box .circle{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 300px;
+        height: 300px;
+        background: var(--secundario);
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    .box .circle img,
+    .box img{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 450px;
     }
 
     .about_me{
@@ -55,6 +102,7 @@
         grid-template-columns: 50% 50%;
         justify-items: center;
         align-items: center;
+        padding: 0 10rem;
     }
 
     .about_me_text{
@@ -68,4 +116,16 @@
         white-space: pre-line;
     }
 
+    .div_btn{
+        margin-top: 1rem;
+    }
+    .btn{
+        padding: 8px 8rem;
+        background: var(--secundario) none;
+        border: none;
+        border-radius: 16px;
+        outline: none;
+        cursor: pointer;
+        color: var(--primario);
+    }
 </style>
