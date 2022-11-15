@@ -15,7 +15,7 @@ html{
 }
 
 body{
-  background-color: var(#fff);
+  background-color: var(--primario);
   margin: 0;
 }
 
@@ -49,12 +49,10 @@ h2{
 }
 
 #app {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
 
   color: var(--letra);
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: 'Dosis', sans-serif;
   font-weight: normal;
 }

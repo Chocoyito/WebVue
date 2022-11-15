@@ -15,9 +15,6 @@
                     <li><a href="">Proyectos</a></li>
                 </ul>
             </div>
-            <div class="button">
-                Boton
-            </div>
         </nav>
     </header>
 </template>
@@ -39,13 +36,14 @@
 .logo{
     padding: 1rem 2rem;
     border-radius: 16px;
-    background-color: var(--secundario);
+    /*background-color: var(--secundario);*/
     color: white;
     font-weight: bold;
 }
 
 ul{
     gap: 4rem;
+    color: white;
 }
 
 li{
