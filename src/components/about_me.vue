@@ -81,13 +81,20 @@
     }
     .btn{
         padding: 8px 8rem;
-        background: var(--secundario) none;
+        /*background: var(--secundario) none;*/
+        background: transparent;
         font-size: 2rem;
-        border: none;
-        border-radius: 8px;
+        border: 2px solid var(--secundario);
+        border-radius: 16px;
         outline: none;
         cursor: pointer;
+        color: var(--secundario);
+        transition: all .3s ease;
+    }
+    .btn:hover{
+        background: var(--secundario);
         color: var(--primario);
+        transform: scale(1.1) perspective(1px)
     }
 
     .box{
