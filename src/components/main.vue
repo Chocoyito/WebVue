@@ -1,11 +1,13 @@
 <script setup>
-    import About_me from '@/components/about_me.vue'
+    import Home from '@/components/home.vue'
     import Skills from '@/components/skills.vue'
+    import About from '@/components/aboutMe.vue'
 </script>
 
 <template>
     <main class="main">
-        <About_me/>
+        <Home/>
+        <About/>
         <Skills/>
     </main>
 </template>

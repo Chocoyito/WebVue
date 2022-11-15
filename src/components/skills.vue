@@ -51,7 +51,7 @@
         padding: 0 5rem;
 
         /*
-           Celestito header #
+           Celestito header #37AEF6
            Azulito header #376DF6
         */
     }
@@ -73,6 +73,5 @@
         align-items: center;
         text-align: center;
     }
-
 
 </style>

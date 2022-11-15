@@ -23,8 +23,12 @@
 <style scoped>
 @import '../assets/main.css';
 
+*{
+    color: var(--secundario);
+}
+
 .header{
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 0 15rem;
 }   
 
@@ -37,13 +41,11 @@
     padding: 1rem 2rem;
     border-radius: 16px;
     /*background-color: var(--secundario);*/
-    color: white;
     font-weight: bold;
 }
 
 ul{
     gap: 4rem;
-    color: white;
 }
 
 li{
