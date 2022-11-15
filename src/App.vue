@@ -1,6 +1,6 @@
 <script setup>
     import Header from './components/header.vue'
-    import Main from './components/about_me.vue'
+    import Main from './components/main.vue'
     import Skills from './components/skills.vue'
 
 </script>

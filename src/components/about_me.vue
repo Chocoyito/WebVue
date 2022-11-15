@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <main class="main_container flex">
+    <div class="container flex">
         <div class="about_me grid">
             <div class="about_me_text flex">
                 <h1 class="no-margin">Me llamo <span class="span_name">{{ name }}</span></h1>
@@ -18,7 +18,7 @@
                 <img class="me" src="../assets/icons/yo2.png" alt="">
             </div>
         </div>
-    </main>
+    </div>
 </template>
 
 <style scoped>
@@ -40,7 +40,7 @@
         color: var(--secundario);
     }
     
-    .main_container{
+    .container{
         padding: 0;
         width: auto;
         /* #090909 #111111 */
@@ -54,7 +54,7 @@
         grid-template-rows: auto;
         justify-items: center;
         align-items: center;
-        margin: 15rem 0;
+        margin: 15rem 0 5rem 0;
         padding: 0 15rem;
 
 
@@ -96,7 +96,8 @@
     }
     .me{
         height: auto;
-        width: 70%
+        width: 70%;
+        padding-bottom: 10rem;
     }
 
 </style>
