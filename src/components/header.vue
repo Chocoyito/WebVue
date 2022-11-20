@@ -39,6 +39,7 @@
 
 .logo{
     padding: 1rem 2rem;
+    border: 2px solid var(--secundario);
     border-radius: 16px;
     /*background-color: var(--secundario);*/
     font-weight: bold;
