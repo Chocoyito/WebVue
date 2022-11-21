@@ -1,14 +1,22 @@
-<script setup>
-    import Home from '@/components/home.vue'
-    import Skills from '@/components/skills.vue'
-    import About from '@/components/aboutMe.vue'
+<script>
+    import Hero from './Hero.vue'
+    import AboutMe from './AboutMe.vue'
+
+    export default{
+        name:"Main",
+
+        components: {
+            Hero,
+            AboutMe
+        },
+    }
+
 </script>
 
 <template>
     <main class="main">
-        <Home/>
-        <About/>
-        <Skills/>
+        <Hero/>
+        <AboutMe/>
     </main>
 </template>
 
