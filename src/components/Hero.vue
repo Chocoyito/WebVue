@@ -12,7 +12,7 @@
 
 <template>
     <div class="container">
-        <div class="hero grid">
+        <div class="hero">
             <div class="hero__info">
                 <h1>Me llamo <span class="hero__name">{{ name }}</span></h1>
                 <h2>Soy un {{carreer}}</h2>
@@ -51,35 +51,6 @@
         font-size: 2.2rem;
     }
 
-
-
-    
-    .container{
-        padding: 0 10rem;
-        width: auto;
-        margin: 10rem 0 0 0;
-        /* #090909 #111111 */
-    }
-
-
-    .hero{
-        display: flex;
-        height: auto;
-        width: 100%;
-        /*grid-template-columns: 50% 50%;
-        grid-template-rows: auto;*/
-        justify-content: space-around;
-        align-content: center;
-    }
-
-    .hero__info{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-self: center;
-    }
-
-
     .hero__button{
         margin-top: 5rem;
     }
@@ -100,6 +71,46 @@
         color: var(--primario);
         transform: scale(1.1) perspective(1px)
     }
+
+
+    
+    .container{
+        padding: 0 2rem;
+        width: auto;
+        margin: 5rem 0 0 0;
+        /* #090909 #111111 */
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @media (min-width: 1080px) {
+        .container{
+            padding: 0 15rem;
+            margin: 10rem 0 0 0;
+        }
+        .hero{
+            display: flex;
+            height: auto;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+        }
+
+        .hero__info{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-self: center;
+        }
+    }
+
+
+
 
     .hero__image{
         width: auto;

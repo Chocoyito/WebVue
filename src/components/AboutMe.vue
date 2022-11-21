@@ -1,13 +1,19 @@
-<!-- <script setup>
+ <script>
+
+ export default {
+     name: "AboutMe"
+ }
 
 </script>
 
 <template>
     <div class="container">
-        <div class="who_am_i grid">
-            <img class="profile_img" src="../assets/icons/profile_picture.jpg" alt="">
+        <div class="about-me">
+            <picture class="about-me__picture">
+                <img class="about-me__img" src="../assets/icons/profile_picture.jpg" alt="">
+            </picture>
 
-            <div class="who_am_i_text flex">
+            <div class="about-me__info">
                 <h2 class="no-margin">Quien soy</h2>
                 <p>Adolescens duis proin orci dolore suscipit quis dicant tale. Constituam duo appetere constituam dolore. Elaboraret et dicant velit aliquet. Quem nec laoreet maximus ludus invenire curabitur lectus.</p>
             </div>
@@ -18,27 +24,29 @@
 
 
 <style scoped>
-    .who_am_i{
-        grid-template-columns: 1fr 1fr;
-        margin: 10rem 0 5rem 0;
-        padding: 0 15rem;
-    }
-    .profile_img{
-        justify-self: center;
-        width: 50%;
-        height: auto;
-        border-radius: 36px;
-    }
-    .who_am_i_text h2{
-        display: block;
+    .container{
+        padding: 0 10rem;
         width: auto;
-        border-bottom: 2px solid black;
+        margin: 10rem 0 0 0;
     }
-    .who_am_i_text{
-        justify-content: start;
-        flex-direction: column;
-        padding: 0 5rem;
+    .about-me{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .about-me__picture  {
+        width: 512px;
+        height: 512px;
+        display: flex;
+        justify-content: center;
+    }
+    .about-me__img{
+        border-radius: 50px;
+    }
+    .about-me__info h2{
+        font-size: 50px;
     }
 
 
-</style> -->
+</style>
