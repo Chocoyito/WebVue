@@ -29,5 +29,4 @@
     padding: 0 15rem;
 }
 
-
 </style>

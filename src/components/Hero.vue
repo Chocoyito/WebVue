@@ -1,7 +1,13 @@
-<!-- <script setup>
-  const name = "Roberto"
-  const carreer = "ingeniero informatico"
-
+ <script>
+    export default {
+        name: "Hero",
+        data() {
+            return {
+                name: "Roberto",
+                carreer: "ingeniero informatico"
+            }
+        }
+    }
 </script>
 
 <template>
@@ -108,4 +114,4 @@
         padding-bottom: 10rem;
     }
 
-</style> -->
+</style>

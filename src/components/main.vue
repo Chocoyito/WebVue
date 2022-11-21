@@ -1,23 +1,19 @@
 <script>
-    import Home from './components/home.vue'
-    import Skills from './components/skills.vue'
-    import About from './components/aboutMe.vue'
+    import Hero from './Hero.vue'
 
     export default{
         name:"Main",
 
         components: {
-            Home, Skills, About
+            Hero
         },
     }
-    
+
 </script>
 
 <template>
     <main class="main">
-        <Home/>
-        <About/>
-        <Skills/>
+        <Hero/>
     </main>
 </template>
 
