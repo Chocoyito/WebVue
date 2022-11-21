@@ -26,7 +26,13 @@
 
 .header{
     font-size: 3rem;
-    padding: 0 15rem;
+    padding: 0 2rem;
 }
+@media (min-width: 1080px) {
+    .header{
+        padding: 0 15rem;
+    }
+}
+
 
 </style>

@@ -1,11 +1,13 @@
 <script>
     import Hero from './Hero.vue'
+    import AboutMe from './AboutMe.vue'
 
     export default{
         name:"Main",
 
         components: {
-            Hero
+            Hero,
+            AboutMe
         },
     }
 
@@ -14,6 +16,7 @@
 <template>
     <main class="main">
         <Hero/>
+        <AboutMe/>
     </main>
 </template>
 
