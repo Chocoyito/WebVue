@@ -1,11 +1,17 @@
-<script setup>
-    import Header from './components/header.vue'
-    import Main from './components/main.vue'
+<script>
+    import Header from './components/Header.vue'
+
+    export default{
+        name: "App",
+        components: {
+            Header
+        }
+    }
+
 </script>
 
 <template>
     <Header/>
-    <Main/>
 </template>
 
 <style scoped>
