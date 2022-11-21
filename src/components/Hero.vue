@@ -11,82 +11,79 @@
 </script>
 
 <template>
-    <div class="container flex">
-        <div class="home grid">
-            <div class="home_text flex">
-                <h1 class="no-margin">Me llamo <span class="span_name">{{ name }}</span></h1>
-                <h2 class="no-margin">Soy un {{carreer}}</h2>
-                <div class="div_btn">
-                    <button class="btn">Mas sobre mi</button>
+    <div class="container">
+        <div class="hero grid">
+            <div class="hero__info">
+                <h1>Me llamo <span class="hero__name">{{ name }}</span></h1>
+                <h2>Soy un {{carreer}}</h2>
+                <div class="hero__button">
+                    <button class="hero__button--btn">Mas sobre mi</button>
                 </div>
             </div>
-            <div class="box flex">
+            <picture class="hero__image">
                 <img class="me" src="../assets/icons/yotuani.png" alt="">
-            </div>
+            </picture>
         </div>
     </div>
 </template>
 
 <style scoped>
 
-    @import '../assets/main.css';
-
     h1{
         font-size: 6rem;
+        margin: 0;
     }
     h2{
         font-size: 3rem;
+        margin: 0;
+    }
+    .hero__info h1{
+        white-space: nowrap;
+    }
+    .hero__name{
+        color: var(--secundario);
+    }
+    .hero__info h2{
+        margin-top: 1rem;
+        white-space: pre-line;
     }
     p{
         font-size: 2.2rem;
     }
 
 
-    .span_name{
-        color: var(--secundario);
-    }
+
     
     .container{
-        padding: 0;
+        padding: 0 10rem;
         width: auto;
         margin: 10rem 0 0 0;
-        flex-flow: wrap;
         /* #090909 #111111 */
     }
 
 
-    .home{
+    .hero{
+        display: flex;
         height: auto;
         width: 100%;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-        justify-items: center;
-        align-items: center;
-        padding: 0 15rem;
-
-
-        border-radius: 30px;
-
+        /*grid-template-columns: 50% 50%;
+        grid-template-rows: auto;*/
+        justify-content: space-around;
+        align-content: center;
     }
 
-    .home_text{
+    .hero__info{
+        display: flex;
         flex-direction: column;
         text-align: center;
         align-self: center;
     }
 
-    .home h1{
-        white-space: nowrap;
-    }
-    .home h2{
-        margin-top: 1rem;
-        white-space: pre-line;
-    }
 
-    .div_btn{
+    .hero__button{
         margin-top: 5rem;
     }
-    .btn{
+    .hero__button--btn{
         padding: 8px 8rem;
         /*background: var(--secundario) none;*/
         background: transparent;
@@ -98,19 +95,21 @@
         color: var(--secundario);
         transition: all .3s ease;
     }
-    .btn:hover{
+    .hero__button--btn:hover{
         background: var(--secundario);
         color: var(--primario);
         transform: scale(1.1) perspective(1px)
     }
 
-    .box{
+    .hero__image{
+        width: auto;
+        text-align: center;
         justify-content: center;
         align-items: center;
     }
     .me{
-        height: auto;
-        width: 70%;
+        height: 512px;
+        width: auto;
         padding-bottom: 10rem;
     }
 
